@@ -29,7 +29,7 @@ script:
 - node_modules/.bin/newman run tests/postman_collection.json -e tests/postman_environment.json
 after_success:
 - docker login -u $DOCKER_USER -p $DOCKER_PASS
-- docker tag my_docker_reposetory/swagger_server my_docker_reposetory/swagger_server
-- docker push my_docker_reposetory/swagger_server
+- docker tag ericvel/devops-lab02 ericvel/devops-lab02
+- docker push ericvel/devops-lab02
 dd:
   secure: g0aeT+UhbarWZZTijon4GKXfNPAYY+7NYgEU7E31g5LoeRt6NAwh1EFTXqXhYCPnINgb9VfR+fmLact5dLahO45bE7VLLhntlHbk8hPc89kUTuC8aHk2/tMOLuORzDUtRGJk3y63J6rALE3uWoK+GMU2R/gP68JYwzL6FAUVVCuf9R8lksbMWkZKF3Oj79gE+Tna/HiAsRz45LhYag1c0Fy0tc/xFk+LNjVl3DwKicXn/OXmEFcAlRAwLG2AKM17NH84GrhOnfQKa1R4HrHp+uzpKJb8RHWj+silAmEY95T/WeY7o/Z05utemsRrGqWmmc/INNrIKnehorhCrIiIG0zKG9rv7PUKivKpGHsgi3w+hyeWRJevQRa6sYhWei8R8pE6dlqBkvVLgUq0MNvppF1wys8jOoKHc6VQ3DegENg1WhxbsZy52Z6MF5tBL+uVpn8nnm7fTpotZ3kKh81A7J/8xS16JG7iGb8GyDGsiYubYp6ca2A0d9iVklgwmlgYDg9nrM4gFgdyrHvuPF6hh22r6lsgVo9CkOuP34h7742AQxDxZtBEM6a5Tw6qIaxa1i47CPdrdYNq/zMOddhRq/E/RpZm/6wUTmTrkErPb3xDHrAYI7OulIf/uRTvMEAUAuqlZODHWzhu17MFDf0Fy0b+c+hYEqyZsLlYK2zpzGM=
